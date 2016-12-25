@@ -24,7 +24,7 @@ if RbConfig::MAKEFILE_CONFIG['CC'] =~ /gcc|clang/
 end
 
 def windows?
-  !!(RUBY_PLATFORM =~ /mswin|mingw|cygwin|windows/)
+  !!(RUBY_PLATFORM =~ /mswin|mingw|cygwin|windows|msys/)
 end
 
 if windows?
